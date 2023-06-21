@@ -1,10 +1,9 @@
 function palindrome(str) {
-  // let escapeFreeString = str.split("\\").join("");
-  // let wordCharacterString = escapeFreeString.match(/\w/g).join("");
-  // let alphaNumericString = wordCharacterString.replace(/\_/g, '');
+  
   let formattedString = str.split("\\").join("").match(/\w/g).join("").replace(/\_/g, '');
-  console.log(formattedString);
+
   return true;
+
 }
 
 console.log(`${palindrome("eye")} should return a boolean.`);
